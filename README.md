@@ -11,6 +11,7 @@ Krypton allows you to sign your GitHub commits with a GPG key. The private key f
 ```console
 $ kr pair
 ```
+Scan the shown QR code with our Krypton app on your phone.
 
 To enable codesigning run:
 ```console
@@ -23,6 +24,10 @@ Test, that everything works:
 ```console
 $ export GPG_TTY=$(tty); kr codesign test
 ```
+
+Next time you add a commit the GPG key is used to sign your it. Since you added the GPG key to GitHub, your commit is marked as “verified.”
+
+When you archive or delete your Gitpod workspace you could remove the paired computer from your Krypton app on your phone.
 
 
 ## See also
