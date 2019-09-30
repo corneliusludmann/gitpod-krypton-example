@@ -5,17 +5,19 @@ This repository shows an example Gitpod Docker image that has Krypton installed.
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/corneliusludmann/gitpod-krypton-example)
 
 
-## How to use Krypton to sign Github commits
+## How to use Krypton to sign GitHub commits
 
-First, pair your workspace with your phone:
+Krypton allows you to sign your GitHub commits with a GPG key. The private key for signing is stored securely on your phone and never leaves it. First, install the app on your phone. Then, pair your workspace with your phone:
 ```console
 $ kr pair
 ```
 
-Enable codesigning:
+To enable codesigning run:
 ```console
 $ kr codesign
 ```
+
+The first time you use Krypton for GitHub code signing you have to go to `https://github.com/settings/keys` and and the GPG key printed by `kr codesign` to GitHub.
 
 Test, that everything works:
 ```console
